@@ -3,13 +3,13 @@
 */
 
 // CUSTOMIZE THESE VALUES FOR YOUR USE
-const TOKENQTY = 1
+const TOKENQTY = 9
 const TOKENID =
-  '8de4984472af772f144a74de473d6c21505a6d89686b57445c3e4fc7db3773b6'
-let TO_SLPADDR = ''
+  '434f4002f7c657f75bcff120f1a88dda9efc1bc4c5703e08b9931c941536bf6f'
+let TO_SLPADDR = 'slptest:qpveurnsq5ylmj4js073nmr8zvz66jks05m4ysheys'
 
 // Set NETWORK to either testnet or mainnet
-const NETWORK = 'mainnet'
+const NETWORK = 'testnet'
 
 // REST API servers.
 const BCHN_MAINNET = 'https://bchn.fullstack.cash/v4/'

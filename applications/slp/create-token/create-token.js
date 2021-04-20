@@ -4,7 +4,7 @@
 */
 
 // Set NETWORK to either testnet or mainnet
-const NETWORK = 'mainnet'
+const NETWORK = 'testnet'
 
 // REST API servers.
 const BCHN_MAINNET = 'https://bchn.fullstack.cash/v4/'
@@ -85,11 +85,11 @@ async function createToken () {
 
     // Generate SLP config object
     const configObj = {
-      name: 'SLP Test Token',
-      ticker: 'SLPTEST',
-      documentUrl: 'https://FullStack.cash',
+      name: 'Pradeep  Token',
+      ticker: 'PRADEEP',
+      documentUrl: 'https://github.com/pradeepp88',
       decimals: 8,
-      initialQty: 100,
+      initialQty: 1000,
       documentHash: '',
       mintBatonVout: 2
     }

@@ -20,7 +20,9 @@ else bchjs = new BCHJS({ restURL: TESTNET3 })
 
 // Open the wallet generated with create-wallet.
 try {
-  var walletInfo = require('../create-wallet/wallet.json')
+  var walletInfo = {
+    cashAddress: 'bchtest:qq2ckhgcz4fvna8jvlqdu692ujtrqsue8yarpm648v'
+  }
 } catch (err) {
   console.log(
     'Could not open wallet.json. Generate a wallet with create-wallet first.'
@@ -32,10 +34,10 @@ try {
 async function listUtxos () {
   try {
     // first get BCH balance
-    const balance = await bchjs.Electrumx.utxo(walletInfo.cashAddress)
-
+    const utxos = await bchjs.Utxo.get(walletInfo.cashAddress)
+       
     console.log(`UTXOs associated with ${walletInfo.cashAddress}:`)
-    console.log(JSON.stringify(balance, null, 2))
+    console.log(utxos)
   } catch (err) {
     console.error('Error in listUtxos: ', err)
     throw err

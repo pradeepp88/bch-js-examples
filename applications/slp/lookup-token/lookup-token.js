@@ -4,10 +4,10 @@
 
 // EDIT THIS WITH THE TOKEN ID YOU WANT TO LOOK UP
 const TOKENID =
-  '8de4984472af772f144a74de473d6c21505a6d89686b57445c3e4fc7db3773b6'
+  "dce01f6717e5c7d12c676a5ba76eac0272f6878cba4813c179f22f8d2d23438f"
 
 // Set NETWORK to either testnet or mainnet
-const NETWORK = 'mainnet'
+const NETWORK = 'testnet'
 
 // REST API servers.
 const BCHN_MAINNET = 'https://bchn.fullstack.cash/v4/'
